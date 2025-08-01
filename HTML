@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Suivi des Outils - PRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Suivi des Outils Professionnel</h1>
+    <div id="formulaire">
+        <label for="user">Prénom de l'utilisateur :</label>
+        <input type="text" id="user" placeholder="Ex: Paul">
+        <label for="outil">Choisir un outil :</label>
+        <select id="outil"></select>
+        <button onclick="emprunter()">Valider l'emprunt</button>
+        <button onclick="toggleAdmin()">🔐 Mode Admin</button>
+    </div>
+    <table id="tableau">
+        <thead>
+            <tr>
+                <th>Prénom</th>
+                <th>Outil</th>
+                <th>Code</th>
+                <th>Date Emprunt</th>
+                <th>Heure Emprunt</th>
+                <th>État Avant</th>
+                <th>Validé par</th>
+                <th>Date Retour</th>
+                <th>Heure Retour</th>
+                <th>État Après</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
